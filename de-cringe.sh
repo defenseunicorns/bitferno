@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Replace 'oci://registry-1.docker.io/bitnamicharts' with 'oci://ghcr.io/defenseunicorns/bitferno' in all 'Chart.yaml' files under the 'bitnami' folder
 find bitnami -type f -name 'Chart.yaml' -exec sed -i 's|oci://registry-1.docker.io/bitnamicharts|oci://ghcr.io/defenseunicorns/bitferno|g' {} +
 

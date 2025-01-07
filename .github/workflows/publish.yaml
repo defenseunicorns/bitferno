@@ -34,14 +34,14 @@ jobs:
       - name: Set up Helm
         uses: azure/setup-helm@v4
 
+      - name: Login to GHCR with helm
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login -u ${{ github.actor }} --password-stdin ghcr.io
+
       - name: Package chart
         run: |
           for i in {1..20}; do
             helm package bitnami/${{ matrix.folder }} -u -d charts && break || sleep 10
           done
-
-      - name: Login to GHCR with helm
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login -u ${{ github.actor }} --password-stdin ghcr.io
 
       - name: Publish chart
         run: helm push charts/${{ matrix.folder }}-*.tgz oci://ghcr.io/defenseunicorns/bitferno
