@@ -35,7 +35,7 @@ jobs:
       - name: Merge Upstream Changes
         run: |
           git checkout main
-          git merge -X ours upstream/main
+          git merge -X ours upstream/main || echo "Merge failed, but continuing the workflow"
 
       - name: Run Modification Script
         run: |
