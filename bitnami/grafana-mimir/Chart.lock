@@ -1,7 +1,7 @@
 dependencies:
 - name: minio
   repository: oci://registry-1.docker.io/bitnamicharts
-  version: 16.0.0
+  version: 16.0.7
 - name: memcached
   repository: oci://registry-1.docker.io/bitnamicharts
   version: 7.7.0
