@@ -13,7 +13,7 @@ annotations:
     - name: chainloop-control-plane-migrations
       image: docker.io/bitnami/chainloop-control-plane-migrations:0.187.0-debian-12-r0
     - name: dex
-      image: docker.io/bitnami/dex:2.42.0-debian-12-r3
+      image: docker.io/bitnami/dex:2.42.1-debian-12-r1
 apiVersion: v2
 appVersion: 0.187.0
 dependencies:
