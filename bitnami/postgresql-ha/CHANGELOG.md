@@ -1,8 +1,20 @@
 # Changelog
 
-## 15.3.17 (2025-05-07)
+## 16.0.2 (2025-05-08)
 
-* [bitnami/postgresql-ha] Release 15.3.17 ([#33538](https://github.com/bitnami/charts/pull/33538))
+* [bitnami/postgresql-ha] :zap: :arrow_up: Update dependency references ([#33576](https://github.com/bitnami/charts/pull/33576))
+
+## <small>16.0.1 (2025-05-08)</small>
+
+* [bitnami/postgresql-ha] ci: improve stability on Ginkgo tests (#33567) ([6d8bc54](https://github.com/bitnami/charts/commit/6d8bc54fc027517e3861a82e6fe4e96141bfc7b2)), closes [#33567](https://github.com/bitnami/charts/issues/33567)
+
+## 16.0.0 (2025-05-08)
+
+* [bitnami/postgresql-ha] feat: Customizable Stream Replication Check credentials (#33552) ([cff2e93](https://github.com/bitnami/charts/commit/cff2e93f9da96f82ad9d97d2d35a7324b54d0931)), closes [#33552](https://github.com/bitnami/charts/issues/33552)
+
+## <small>15.3.17 (2025-05-07)</small>
+
+* [bitnami/postgresql-ha] Release 15.3.17 (#33538) ([c28174e](https://github.com/bitnami/charts/commit/c28174e931c0aba3c68b4369b68300ac84ed7172)), closes [#33538](https://github.com/bitnami/charts/issues/33538)
 
 ## <small>15.3.16 (2025-05-06)</small>
 
