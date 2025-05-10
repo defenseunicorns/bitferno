@@ -1,8 +1,17 @@
 # Changelog
 
-## 19.5.13 (2025-05-07)
+## 20.0.1 (2025-05-09)
 
-* [bitnami/contour] Release 19.5.13 ([#33545](https://github.com/bitnami/charts/pull/33545))
+* [bitnami/contour] :zap: :arrow_up: Update dependency references ([#33585](https://github.com/bitnami/charts/pull/33585))
+
+## 20.0.0 (2025-05-09)
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33581) ([e02ab69](https://github.com/bitnami/charts/commit/e02ab69cba3b503042ad305889855bd66fe332c3)), closes [#33581](https://github.com/bitnami/charts/issues/33581)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>19.5.13 (2025-05-07)</small>
+
+* [bitnami/contour] Release 19.5.13 (#33545) ([a1d1a97](https://github.com/bitnami/charts/commit/a1d1a97564cc8018774a84d35a7c0699e1a8dbe3)), closes [#33545](https://github.com/bitnami/charts/issues/33545)
 
 ## <small>19.5.12 (2025-05-06)</small>
 
