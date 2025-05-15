@@ -87,6 +87,9 @@ jobs:
             if (( i == retries )); then
               echo "Failed to publish ${chart} after ${retries} attempts"
               exit 1
+            else
+              echo "Successfully published ${chart} after $((i + 1)) attempts"
+              rm -rf charts/${chart}-*.tgz
             fi
           done
 
