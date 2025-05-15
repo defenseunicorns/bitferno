@@ -2,9 +2,7 @@
 # SPDX-License-Identifier: APACHE-2.0
 
 annotations:
-  tanzuCategory: application
   category: MachineLearning
-  licenses: Apache-2.0
   images: |
     - name: git
       image: docker.io/bitnami/git:2.48.1-debian-12-r8
@@ -20,7 +18,9 @@ dependencies:
   tags:
   - bitnami-common
   version: 2.x.x
-description: PyTorch is a deep learning platform that accelerates the transition from research prototyping to production deployment. Bitnami image includes Torchvision for specific computer vision support.
+description: PyTorch is a deep learning platform that accelerates the transition from
+  research prototyping to production deployment. Bitnami image includes Torchvision
+  for specific computer vision support.
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pytorch/img/pytorch-stack-220x234.png
 keywords:
