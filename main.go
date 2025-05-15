@@ -23,7 +23,7 @@ type Dependency struct {
 
 func main() {
 	// Path to the bitnami charts folder.
-	basePath := "/home/corang/bitferno/bitnami"
+	basePath := "bitnami"
 
 	// Read all Chart.yaml files
 	charts, err := readCharts(basePath)
