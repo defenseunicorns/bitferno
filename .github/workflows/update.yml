@@ -72,9 +72,17 @@ jobs:
               exit 1
             fi
 
-            helm package "bitnami/${chart}" -u -d charts
+            retries=10
 
-            helm push charts/${chart}-*.tgz oci://ghcr.io/defenseunicorns/bitferno
+            for ((i=0; i<retries; i++)); do
+              if helm package "bitnami/${chart}" -u -d charts && helm push charts/${chart}-*.tgz "oci://ghcr.io/defenseunicorns/bitferno"; then
+                echo "Successfully published ${chart}"
+                break
+              else
+                echo "Failed to publish ${chart}, retrying in 2 seconds..."
+                sleep 2
+              fi
+            done
           done
 
       - name: Push Changes
