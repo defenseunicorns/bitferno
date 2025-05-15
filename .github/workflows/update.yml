@@ -54,7 +54,6 @@ jobs:
 
       - name: Package, Test, and Publish Charts in Order
         run: |
-          set -euxo pipefail
           chart_order=$(go run main.go)
           IFS=$'\n'
           for chart in ${chart_order}; do
