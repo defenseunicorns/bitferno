@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  packages: write
 
 jobs:
   update-fork:
@@ -45,6 +46,17 @@ jobs:
             git commit -m "chore: apply automated modifications"
           fi
 
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+
+      - name: Login to GHCR with helm
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login -u ${{ github.actor }} --password-stdin ghcr.io
+
+      - name: Package and publish common chart
+        run: |
+          helm package bitnami/common -u -d charts
+          helm push charts/common-*.tgz oci://ghcr.io/defenseunicorns/bitferno
+
       - name: Test All Charts
         run: |
           for dir in bitnami/*/; do
@@ -52,10 +64,11 @@ jobs:
               echo "Skipping common chart"
               continue
             fi
-            if helm template "$dir" --set global.imageRegistry=ghcr.io --dependency-update > /dev/null 2>&1; then
+            if helm dependency update "${dir}" --skip-refresh > /dev/null 2>&1 && helm template "$dir" --set global.imageRegistry=ghcr.io > /dev/null 2>&1; then
               echo "$dir Passed"
             else
               echo "$dir Failed"
+              helm template "$dir" --set global.imageRegistry=ghcr.io
               exit 1
             fi
           done
