@@ -54,6 +54,7 @@ jobs:
 
       - name: Package, Test, and Publish Charts in Order
         run: |
+          set -euxo pipefail
           chart_order=$(go run main.go)
           IFS=$'\n'
           for chart in ${chart_order}; do
@@ -83,6 +84,10 @@ jobs:
                 sleep 2
               fi
             done
+            if (( i == retries )); then
+              echo "Failed to publish ${chart} after ${retries} attempts"
+              exit 1
+            fi
           done
 
       - name: Push Changes
