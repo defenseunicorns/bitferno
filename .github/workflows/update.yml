@@ -52,25 +52,29 @@ jobs:
       - name: Login to GHCR with helm
         run: echo "${{ secrets.GITHUB_TOKEN }}" | helm registry login -u ${{ github.actor }} --password-stdin ghcr.io
 
-      - name: Package and publish common chart
+      - name: Package, Test, and Publish Charts in Order
         run: |
-          helm package bitnami/common -u -d charts
-          helm push charts/common-*.tgz oci://ghcr.io/defenseunicorns/bitferno
-
-      - name: Test All Charts
-        run: |
-          for dir in bitnami/*/; do
-            if [ "$dir" == "bitnami/common/" ]; then
-              echo "Skipping common chart"
+          chart_order=$(go run main.go)
+          IFS=$'\n'
+          for chart in ${chart_order}; do
+            if [[ "${chart}" == "common" || "${chart}" == "kube-prometheus-crds" ]]; then
+              echo "Skipping ${chart}"
               continue
             fi
-            if helm dependency update "${dir}" --skip-refresh > /dev/null 2>&1 && helm template "$dir" --set global.imageRegistry=ghcr.io > /dev/null 2>&1; then
-              echo "$dir Passed"
+            echo "Processing chart: ${chart}"
+
+            # Test the chart by rendering templates
+            if helm dependency update "bitnami/${chart}" --skip-refresh > /dev/null 2>&1 && helm template "bitnami/${chart}" --set global.imageRegistry=ghcr.io > /dev/null 2>&1; then
+              echo "Test passed for ${chart}"
             else
-              echo "$dir Failed"
-              helm template "$dir" --set global.imageRegistry=ghcr.io
+              echo "Test failed for ${chart}"
+              helm template "bitnami/${chart}" --set global.imageRegistry=ghcr.io
               exit 1
             fi
+
+            helm package "bitnami/${chart}" -u -d charts
+
+            helm push "charts/${chart}-*.tgz" oci://ghcr.io/defenseunicorns/bitferno
           done
 
       - name: Push Changes
