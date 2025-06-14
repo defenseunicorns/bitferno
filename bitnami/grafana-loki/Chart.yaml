@@ -18,7 +18,7 @@ dependencies:
 - alias: grafanaalloy
   condition: grafanaalloy.enabled
   name: grafana-alloy
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://ghcr.io/defenseunicorns/bitferno
   version: 0.x.x
 - alias: memcachedchunks
   condition: memcachedchunks.enabled
