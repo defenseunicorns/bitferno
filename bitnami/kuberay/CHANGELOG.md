@@ -1,8 +1,16 @@
 # Changelog
 
-## 1.4.18 (2025-06-20)
+## 1.4.20 (2025-07-07)
 
-* [bitnami/kuberay] :zap: :arrow_up: Update dependency references ([#34574](https://github.com/bitnami/charts/pull/34574))
+* [bitnami/kuberay] :zap: :arrow_up: Update dependency references ([#34836](https://github.com/bitnami/charts/pull/34836))
+
+## <small>1.4.19 (2025-07-07)</small>
+
+* [bitnami/kuberay]  Update `operator.metrics.serviceMonitor.honorLabels` to keep in sync with upstrea ([3be20eb](https://github.com/bitnami/charts/commit/3be20eb970e579f347c25aadce0ef592fee92e46)), closes [#34793](https://github.com/bitnami/charts/issues/34793)
+
+## <small>1.4.18 (2025-06-20)</small>
+
+* [bitnami/kuberay] :zap: :arrow_up: Update dependency references (#34574) ([ef4c802](https://github.com/bitnami/charts/commit/ef4c80257e9fb6563e0550ef6700dafd0f6918cd)), closes [#34574](https://github.com/bitnami/charts/issues/34574)
 
 ## <small>1.4.17 (2025-06-19)</small>
 
