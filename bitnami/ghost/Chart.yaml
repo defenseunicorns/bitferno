@@ -18,7 +18,7 @@ dependencies:
   repository: oci://ghcr.io/defenseunicorns/bitferno
   tags:
   - ghost-database
-  version: 13.x.x
+  version: 14.x.x
 - name: common
   repository: oci://ghcr.io/defenseunicorns/bitferno
   tags:
