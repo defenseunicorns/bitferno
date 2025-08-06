@@ -40,15 +40,15 @@ description: Prometheus Operator provides easy monitoring definitions for Kubern
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
 keywords:
-- prometheus
-- alertmanager
-- operator
-- monitoring
+  - prometheus
+  - alertmanager
+  - operator
+  - monitoring
 kubeVersion: '>= 1.16.0-0'
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
+  - name: Broadcom, Inc. All Rights Reserved.
+    url: https://github.com/bitnami/charts
 name: kube-prometheus
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
-version: 11.2.16
+  - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
+version: 11.3.1

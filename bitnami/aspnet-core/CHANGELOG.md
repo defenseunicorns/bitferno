@@ -1,8 +1,20 @@
 # Changelog
 
-## 7.0.14 (2025-07-17)
+## 7.0.16 (2025-08-05)
 
-* [bitnami/aspnet-core] :zap: :arrow_up: Update dependency references ([#35192](https://github.com/bitnami/charts/pull/35192))
+* [bitnami/aspnet-core] :zap: :arrow_up: Update dependency references ([#35431](https://github.com/bitnami/charts/pull/35431))
+
+## <small>7.0.15 (2025-08-05)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/aspnet-core] :zap: :arrow_up: Update dependency references (#35404) ([c1ef920](https://github.com/bitnami/charts/commit/c1ef920dabee293e34da868adfe76ab85c8741d8)), closes [#35404](https://github.com/bitnami/charts/issues/35404)
+
+## <small>7.0.14 (2025-07-17)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/aspnet-core] :zap: :arrow_up: Update dependency references (#35192) ([bd99c5c](https://github.com/bitnami/charts/commit/bd99c5c1e82a4bb27e1ec788472b55ee0cdaebdb)), closes [#35192](https://github.com/bitnami/charts/issues/35192)
 
 ## <small>7.0.13 (2025-07-09)</small>
 

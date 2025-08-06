@@ -32,18 +32,18 @@ description: Redmine is an open source management application. It includes a tra
 home: https://bitnami.com
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redmine/img/redmine-stack-220x234.png
 keywords:
-- redmine
-- project management
-- www
-- http
-- web
-- application
-- ruby
-- rails
+  - redmine
+  - project management
+  - www
+  - http
+  - web
+  - application
+  - ruby
+  - rails
 maintainers:
-- name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
+  - name: Broadcom, Inc. All Rights Reserved.
+    url: https://github.com/bitnami/charts
 name: redmine
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/redmine
-version: 33.0.3
+  - https://github.com/bitnami/charts/tree/main/bitnami/redmine
+version: 33.0.4
