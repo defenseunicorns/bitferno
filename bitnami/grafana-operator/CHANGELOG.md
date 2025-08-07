@@ -1,8 +1,16 @@
 # Changelog
 
-## 4.9.28 (2025-08-05)
+## 4.9.30 (2025-08-06)
 
-* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references ([#35418](https://github.com/bitnami/charts/pull/35418))
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references ([#35438](https://github.com/bitnami/charts/pull/35438))
+
+## <small>4.9.29 (2025-08-06)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35436) ([d1e350d](https://github.com/bitnami/charts/commit/d1e350de576aa87b70747656219082fe1d696d25)), closes [#35436](https://github.com/bitnami/charts/issues/35436)
+
+## <small>4.9.28 (2025-08-05)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35418) ([814adc7](https://github.com/bitnami/charts/commit/814adc7d85f309e071086c1a48e06af68aaaa2eb)), closes [#35418](https://github.com/bitnami/charts/issues/35418)
 
 ## <small>4.9.27 (2025-08-05)</small>
 
