@@ -1,8 +1,17 @@
 # Changelog
 
-## 1.3.8 (2025-08-05)
+## 1.3.10 (2025-08-07)
 
-* [bitnami/zipkin] :zap: :arrow_up: Update dependency references ([#35421](https://github.com/bitnami/charts/pull/35421))
+* [bitnami/zipkin] :zap: :arrow_up: Update dependency references ([#35685](https://github.com/bitnami/charts/pull/35685))
+
+## <small>1.3.9 (2025-08-07)</small>
+
+* [bitnami/zipkin] :zap: :arrow_up: Update dependency references (#35548) ([f0305bd](https://github.com/bitnami/charts/commit/f0305bd08a012fa1a8fa8684e200a0dc63ddae5d)), closes [#35548](https://github.com/bitnami/charts/issues/35548)
+
+## <small>1.3.8 (2025-08-05)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/zipkin] :zap: :arrow_up: Update dependency references (#35421) ([9ca0a96](https://github.com/bitnami/charts/commit/9ca0a9628c62595baecdd250ce2692f9b6f16e4f)), closes [#35421](https://github.com/bitnami/charts/issues/35421)
 
 ## <small>1.3.7 (2025-07-26)</small>
 

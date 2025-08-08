@@ -1,8 +1,17 @@
 # Changelog
 
-## 13.0.10 (2025-08-05)
+## 13.0.12 (2025-08-07)
 
-* [bitnami/mastodon] :zap: :arrow_up: Update dependency references ([#35428](https://github.com/bitnami/charts/pull/35428))
+* [bitnami/mastodon] :zap: :arrow_up: Update dependency references ([#35619](https://github.com/bitnami/charts/pull/35619))
+
+## <small>13.0.11 (2025-08-07)</small>
+
+* [bitnami/mastodon] :zap: :arrow_up: Update dependency references (#35592) ([148d426](https://github.com/bitnami/charts/commit/148d42603cc31e0c1b31b5161c8ce50f4b95911c)), closes [#35592](https://github.com/bitnami/charts/issues/35592)
+
+## <small>13.0.10 (2025-08-05)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/mastodon] :zap: :arrow_up: Update dependency references (#35428) ([daeb6a0](https://github.com/bitnami/charts/commit/daeb6a0dfaa58cbec30b5c2c52b17bcb1915da87)), closes [#35428](https://github.com/bitnami/charts/issues/35428)
 
 ## <small>13.0.9 (2025-07-23)</small>
 

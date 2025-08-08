@@ -1,8 +1,17 @@
 # Changelog
 
-## 12.0.15 (2025-08-06)
+## 12.0.17 (2025-08-07)
 
-* [bitnami/etcd] :zap: :arrow_up: Update dependency references ([#35468](https://github.com/bitnami/charts/pull/35468))
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references ([#35604](https://github.com/bitnami/charts/pull/35604))
+
+## <small>12.0.16 (2025-08-07)</small>
+
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#35560) ([927680c](https://github.com/bitnami/charts/commit/927680c92928e98e7ea4d409d6e87726be9bed06)), closes [#35560](https://github.com/bitnami/charts/issues/35560)
+
+## <small>12.0.15 (2025-08-07)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/etcd] :zap: :arrow_up: Update dependency references (#35468) ([d4a99d5](https://github.com/bitnami/charts/commit/d4a99d5a500158023662829d1990e4a01c3e5d1f)), closes [#35468](https://github.com/bitnami/charts/issues/35468)
 
 ## <small>12.0.14 (2025-07-25)</small>
 
