@@ -17,7 +17,7 @@ dependencies:
 - condition: minio.enabled
   name: minio
   repository: oci://ghcr.io/defenseunicorns/bitferno
-  version: 14.x.x
+  version: 17.x.x
 - condition: zookeeper.enabled
   name: zookeeper
   repository: oci://ghcr.io/defenseunicorns/bitferno
