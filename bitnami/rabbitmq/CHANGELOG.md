@@ -580,7 +580,7 @@
 
 ## <small>11.14.4 (2023-05-02)</small>
 
-* [bitnami/rabbitmq] Fix high CPU usage while idle (#16082) ([83827ce](https://github.com/bitnami/charts/commit/83827ce340efd7f7203d1ca7789eb9205110a1e0)), closes [#16082](https://github.com/bitnami/charts/issues/16082) [#11117](https://github.com/bitnami/charts/issues/11117) [#11180](https://github.com/bitnami/charts/issues/11180) [#11116](https://github.com/bitnami/charts/issues/11116)
+* [bitnami/rabbitmq] Fix high CPU usage while idle (#16082) ([83827ce](https://github.com/bitnami/charts/commit/83827ce340efd7f7203d1ca7789eb9205110a1e0)), closes [#16082](https://github.com/bitnami/charts/issues/16082) [#11117](https://github.com/bitnami/charts/issues/11117)
 
 ## <small>11.14.3 (2023-04-29)</small>
 
