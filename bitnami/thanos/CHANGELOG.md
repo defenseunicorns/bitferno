@@ -1,8 +1,15 @@
 # Changelog
 
-## 17.3.4 (2025-12-20)
+## 17.4.0 (2026-02-08)
 
-* [bitnami/thanos] Fix sharded storegateway endpoints not respecting dnsDiscovery setting ([#36418](https://github.com/bitnami/charts/pull/36418))
+* [bitnami/thanos]: Adds compactor.deploymentAnnotation to thanos compactor options ([#36453](https://github.com/bitnami/charts/pull/36453))
+
+## <small>17.3.4 (2026-01-12)</small>
+
+* [bitnami/thanos] Fix sharded storegateway endpoints not respecting dnsDiscovery setting (#36418) ([ac5177e](https://github.com/bitnami/charts/commit/ac5177e824beaeedd694d0a0edcaaf5a02fddb9b)), closes [#36418](https://github.com/bitnami/charts/issues/36418)
+* Change wording in Chart's READMEs (#36379) ([a4ef0a6](https://github.com/bitnami/charts/commit/a4ef0a63877fcf32895869ceef0916c15a4718e5)), closes [#36379](https://github.com/bitnami/charts/issues/36379)
+* Fix documentation typos in README files (#36429) ([93c07b0](https://github.com/bitnami/charts/commit/93c07b0ef0f76ef6967eda3df76ae8f130bd6677)), closes [#36429](https://github.com/bitnami/charts/issues/36429)
+* Remove TAC sentence present in some READMEs (#36381) ([e07d331](https://github.com/bitnami/charts/commit/e07d3319b61f49ddf6f431da3ed7ec0e0be3d5d0)), closes [#36381](https://github.com/bitnami/charts/issues/36381)
 
 ## <small>17.3.3 (2025-11-03)</small>
 
