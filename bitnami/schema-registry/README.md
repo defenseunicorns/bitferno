@@ -390,6 +390,7 @@ For annotations, please see [this document](https://github.com/kubernetes/ingres
 | `ingress.extraTls`                      | TLS configuration for additional hostname(s) to be covered with this ingress record                   | `[]`                     |
 | `ingress.secrets`                       | Custom TLS certificates as secrets                                                                    | `[]`                     |
 | `ingress.extraRules`                    | Additional rules to be covered with this ingress record                                               | `[]`                     |
+| `httpRoutes`                            | Array of HTTPRoute resources to create.                                                               | `[]`                     |
 
 ### RBAC parameters
 

@@ -705,6 +705,64 @@ ingress:
   ##             name: http
   ##
   extraRules: []
+## Kafka-UI HTTPRoute configuration
+## ref: https://gateway-api.sigs.k8s.io/api-types/httproute/
+##
+## @param httpRoutes [array] Array of HTTPRoute resources to create.
+##
+## Example:
+## httpRoutes:
+##   ## Whether to enable this HTTPRoute & subsequently create the HTTPRoute resource.
+##   ##
+## - enabled: false
+##   ## Array of hostnames to expose this HTTPRoute under
+##   ##
+##   hostnames:
+##   - "example.com"
+##   ## Key/value pair of additional annotations for the HTTPRoute resource.
+##   ##
+##   annotations: {}
+##   ## Key/value pair of additional labels for the HTTPRoute
+##   ##
+##   labels: {}
+##   ## The name to give this HTTPRoute resource - defaults to a combination of the chart name & gateway reference name.
+##   ##
+##   nameOverride: ""
+##   ## Array of which gateways to bind this HTTPRoute to
+##   ##
+##   gatewayParentRefs:
+##     ## The name of the gateway to bind this HTTPRoute to.
+##     ##
+##   - name: "gateway-example"
+##     ## The namespace that the gateway is defined in.
+##     ##
+##     namespace: "gateway-example"
+##     ## The section name of the listener to bind to on the Gateway.
+##     ##
+##     sectionName: "http-listener"
+##   ## Whether to strip the path before sending the request to the service.
+##   ##
+##   shouldStripPath: true
+##   ## Whether this HTTPRoute should route to the backend service.
+##   ##
+##   shouldRouteToService: true
+##   ## Array of HTTPRoute match rules
+##   ## ref: https://gateway-api.sigs.k8s.io/reference/spec/#httproutematch
+##   ##
+##   matches:
+##   - path:
+##       type: PathPrefix
+##       value: "/kafka-ui"
+##   ## Array of HTTPRoute filters
+##   ## ref: https://gateway-api.sigs.k8s.io/reference/spec/#httproutefilter
+##   ##
+##   filters: []
+##   ## Array of HTTPRoute timeouts
+##   ## ref: https://gateway-api.sigs.k8s.io/reference/spec/#httproutetimeouts
+##   ##
+##   timeouts: {}
+httpRoutes: []
+
 ## @section RBAC parameters
 ## Schema Registry pods ServiceAccount.
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
